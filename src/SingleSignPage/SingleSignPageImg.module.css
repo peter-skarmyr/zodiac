@@ -1,0 +1,25 @@
+.zodiacImg {
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .zodiacImg {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .zodiacImg {
+    max-width: 55%;
+  }
+}
+@media (min-width: 992px) {
+  .zodiacImg {
+    max-width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .zodiacImg {
+    max-width: 50%;
+  }
+}

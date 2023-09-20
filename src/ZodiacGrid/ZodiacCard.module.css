@@ -1,0 +1,41 @@
+@import "../vars.css";
+
+.container {
+  background-color: var(--color-content-card);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%) auto;
+  grid-template-areas:
+    "icon"
+    "name"
+    "date"
+    "description";
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
+.icon {
+  grid-area: icon;
+}
+
+.name {
+  grid-area: name;
+  margin: 0;
+  text-align: center;
+}
+
+.date {
+  grid-area: date;
+  margin: 0;
+  text-align: center;
+}
+
+.description {
+  grid-area: description;
+}

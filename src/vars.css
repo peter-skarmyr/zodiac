@@ -1,0 +1,10 @@
+:root {
+  --color-content-card: #36454f;
+  --color-page-bg: #0f1020;
+
+  --breakpoint-xs: 576px;
+  --breakpoint-s: 768px;
+  --breakpoint-m: 992px;
+  --breakpoint-l: 1200px;
+
+}

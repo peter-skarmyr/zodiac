@@ -1,0 +1,99 @@
+@import "../vars.css";
+
+.container {
+  background-color: var(--color-content-card);
+  border: 0 solid transparent;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%)  fit-content(100%) auto;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+          "topleft img topright"
+          "previous header next"
+          "middleleft summary middleright"
+          "bottomleft traits bottomright"
+          "bottomleft compatible bottomright";
+  gap: 2rem 0;
+  color: white;
+  width: 100%;
+  justify-items: center;
+  padding: 2rem 0;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.img {
+  grid-area: img;
+}
+
+.summary {
+  grid-area: summary;
+}
+
+.traits{
+  grid-area: traits;
+}
+
+.compatible{
+  grid-area: compatible;
+}
+
+.previous{
+  grid-area: previous;
+}
+
+.next{
+  grid-area: next;
+}
+
+.previous, .next{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.next img, .previous img{
+  width: 3rem;
+}
+
+
+.header {
+  grid-area: header;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.header h2 {
+  margin: 0
+}
+
+.header h4 {
+  margin: 0
+}
+
+.textSection{
+  display: flex;
+  flex-direction: column;
+}
+
+.linkContainer{
+  display: flex;
+  gap: 4px;
+}
+
+.link{
+  color: white;
+}
+
+.textSection h4{
+  margin: 0
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}

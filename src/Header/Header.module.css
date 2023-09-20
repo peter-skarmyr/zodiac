@@ -1,0 +1,50 @@
+.logo {
+  max-height: 4rem;
+  max-width: 4rem;
+}
+.text{
+  white-space: nowrap;
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+}
+
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 1400px;
+  }
+}
