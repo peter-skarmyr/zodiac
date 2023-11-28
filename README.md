@@ -1,5 +1,5 @@
 # Zodiac
-
+https://zodiacsigns.guru  
 Simple react application with AI generated texts and images about zodiac signs. 
 
 ## Disclaimer 
