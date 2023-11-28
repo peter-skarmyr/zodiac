@@ -62,7 +62,7 @@ export const SingleSignPage = ({ sign }: Props) => {
         <div className={styles.linkContainer}>
           {compatibleSigns.map((sign, i) => {
             return (
-              <Link to={signPath[sign]} className={styles.link}>
+              <Link key={sign} to={signPath[sign]} className={styles.link}>
                 {`${signDisplayName[sign]}${
                   i === compatibleSigns.length - 1 ? "" : ","
                 }`}
